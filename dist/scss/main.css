@@ -1,0 +1,142 @@
+/*-------SCSS------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+body h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 140rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+/*-------COMPONENTS------------*/
+.header {
+  background: hsl(235, 83%, 59%);
+  position: relative;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .blur {
+  height: 100vh;
+  width: 25%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .branding {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .branding h3 {
+  color: hsl(0, 0%, 100%);
+}
+.header__nav {
+  position: absolute;
+  background: hsl(0, 0%, 100%);
+  top: 0rem;
+  right: 0rem;
+  height: 100vh;
+  width: 75%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.header__nav ul figure {
+  padding-top: 0.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+.header__nav ul li {
+  padding: 1.5rem;
+}
+.header__nav ul li a {
+  color: hsl(206, 9%, 15%);
+}
+.header__nav ul li:hover a {
+  text-decoration: underline;
+}
+.header__nav ul li.active {
+  background: hsl(0, 0%, 90%);
+}
+.header__nav ul li.active a {
+  color: hsl(203, 89%, 53%);
+}
+.header__nav a.download {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.header__actions {
+  display: flex;
+  gap: 2rem;
+}
+.header__actions .toggle__menu {
+  margin: 1rem;
+}
+.header__actions .toggle__menu span {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: hsl(0, 0%, 100%);
+  display: block;
+}
+.header__actions .toggle__menu span:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: hsl(206, 9%, 15%);
+  border-radius: 5rem;
+}
+.btn.bg--light {
+  background: hsl(0, 0%, 100%);
+}
+.btn.bg--light:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn.bg--violet {
+  background: hsl(235, 83%, 59%);
+  color: hsl(0, 0%, 100%);
+}
+.btn.bg--violet:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/*-------PAGES------------*//*# sourceMappingURL=main.css.map */

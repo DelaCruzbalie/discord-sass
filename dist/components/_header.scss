@@ -1,0 +1,91 @@
+.header{
+    background: $clr-violet;
+    position: relative;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        
+    }
+    .blur{
+        height: 100vh;
+        width: 25%;
+        background: rgb(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .branding{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        h3{
+            color: $clr-light;
+        }
+    }
+     &__nav{
+        position: absolute;
+        background: $clr-light;
+        top: 0rem;
+        right: 0rem;
+        height: 100vh;
+        width: 75%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+           figure{
+                padding-top: 0.8rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid gray;
+                width: 100%;
+            } 
+            li{
+                padding: 1.5rem;
+                a{
+                    color: $clr-dark;
+                }
+                &:hover{
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+                &.active{
+                    background: hsl(0, 0%, 90%);
+                    a{
+                        color: hsl(203, 89%, 53%);
+                    }
+                }
+            }
+        }
+        a.download{
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+      }
+    &__actions{
+        display: flex;
+        gap: 2rem;
+
+        .toggle__menu{
+            margin: 1rem;
+            span{
+                width: 2.5rem;
+                height: 0.3rem;
+                background-color: $clr-light;
+                display: block;
+                &:nth-child(2){
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}
